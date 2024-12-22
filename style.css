@@ -1,29 +1,32 @@
 body {
-    background-color: #e0f7fa;
+    background-color: #00796B;
     height: 100vh;
     font-family: Arial, sans-serif;
+    margin: 10px;
 }
 
 main {
     display: flex;
-    background-color: #fff;
+    background-color: #F5F5F5;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 nav {
     display: flex;
-    background-color: #b3e5fc;
+    background-color: #60cafb;
     border: 1px solid #81d4fa;
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 10px;
     justify-content: center;
 }
 
 nav a {
-    color: #147cca;
+    border-radius: 5px;
+    color: #2C3E50;
     text-decoration: none;
     padding: 5px;
     margin: 0 5px;
@@ -33,6 +36,57 @@ nav a:hover {
     background-color: #81d4fa;
 }
 
+img {
+    border-radius: 10px;
+}
+
+h1 {
+    color: #147cca;
+}
+
+p {
+    color: #147cca;
+    text-align: center;
+}
+
+ol {
+    color: #147cca;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+li {
+    margin-top: 50px;
+}
+
+.tree {
+    position: relative;
+    width: 20px;
+    height: 70px;
+    background-color: brown;
+    margin: 0 auto;
+}
+
+.tree::before {
+    content: '';
+    position: absolute;
+    border-left: 35px solid transparent;
+    border-right: 35px solid transparent;
+    border-bottom: 50px solid green;
+    top: -45px; 
+    left: -25px;
+}
+
+.tree::after {
+    content: '';
+    position: absolute;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-bottom: 60px solid green;
+    top: -25px; 
+    left: -30px; 
+}
 
 /* Snowflake Animation */
 .snowflake {
